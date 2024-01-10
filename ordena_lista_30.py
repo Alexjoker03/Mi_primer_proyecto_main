@@ -30,7 +30,7 @@ def fun_listado(lista, orden):
                 if lista[j] < lista[j + 1]:
                     lista[j], lista[j + 1] = lista[j + 1], lista[j]    
 
-    print(lista)            
+    return(lista)            
 
 
 
@@ -39,7 +39,8 @@ largo_lista = int(input("¿De cuántos números va a ser tu lista? >>>  "))
 ord = input("Escribe ASC si quieres que se muestre tu lista de forma ascendente o DESC si... ya sabes")
 orden = ord.upper()
 
-fun_listado(lista, orden)
+resultado = fun_listado(lista, orden)
+print(resultado)
 
 
 
