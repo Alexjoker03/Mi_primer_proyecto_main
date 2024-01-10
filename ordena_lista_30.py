@@ -8,7 +8,18 @@
 
 def fun_listado(lista, orden):
     if orden == "ASC":
-        
+        for i in range(largo_lista):
+            numero = int(input("Introduce un número >>>  "))
+            lista.append(numero)
+
+        for i in range(largo_lista):
+
+             for j in range(0, largo_lista - i - 1):
+                if lista[j] > lista[j + 1]:
+                    lista[j], lista[j + 1] = lista[j + 1], lista[j]
+
+    print(lista)            
+
 
 
 lista = []
@@ -16,17 +27,11 @@ largo_lista = int(input("¿De cuántos números va a ser tu lista? >>>  "))
 ord = input("Escribe ASC si quieres que se muestre tu lista de forma ascendente o DESC si... ya sabes")
 orden = ord.capitalize()
 
-for i in range(largo_lista):
-    numero = int(input("Introduce un número >>>  "))
-    lista.append(numero)
-
-for i in range(largo_lista):
-
-    for j in range(0, largo_lista - i - 1):
-        if lista[j] > lista[j + 1]:
 
 
-print(lista)    
+
+
+    
 
 
 
