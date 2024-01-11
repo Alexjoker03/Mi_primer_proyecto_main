@@ -44,6 +44,7 @@ orden = ord.upper()
 
 resultado = fun_listado(lista, orden)
 print(f"Tu lista es: {resultado} esta dude, lo logramos")
+print("Eres genial")
 
       
       
