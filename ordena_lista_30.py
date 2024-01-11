@@ -28,7 +28,10 @@ def fun_listado(lista, orden):
 
              for j in range(0, largo_lista - i - 1):
                 if lista[j] < lista[j + 1]:
-                    lista[j], lista[j + 1] = lista[j + 1], lista[j]    
+                    lista[j], lista[j + 1] = lista[j + 1], lista[j]  
+
+    if orden != "DESC" or "ASC":
+        lista = [1, 3, 5, 7]  
 
     print(lista)            
 
