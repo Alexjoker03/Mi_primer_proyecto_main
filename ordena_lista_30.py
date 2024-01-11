@@ -33,16 +33,20 @@ def fun_listado(lista, orden):
     if orden != "DESC" or "ASC":
         lista = [1, 3, 5, 7]  
 
-    print(lista)            
+    return(lista)            
 
 
 
 lista = []
 largo_lista = int(input("¿De cuántos números va a ser tu lista? >>>  "))
-ord = input("Escribe ASC si quieres que se muestre tu lista de forma ascendente o DESC si... ya sabes")
+ord = input("Escribe ASC si quieres que se muestre tu lista de forma ascendente o DESC si... ya sabes >>> ")
 orden = ord.upper()
 
-fun_listado(lista, orden)
+resultado = fun_listado(lista, orden)
+print(f"Tu lista es: {resultado} esta dude")
+
+      
+      
 
 
 
