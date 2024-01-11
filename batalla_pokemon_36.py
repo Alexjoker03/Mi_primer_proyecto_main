@@ -1,0 +1,33 @@
+"""Crea un programa que calcule el daño de un ataque durante
+ * una batalla Pokémon.
+ * - La fórmula será la siguiente: daño = 50 * (ataque / defensa) * efectividad
+ * - Efectividad: x2 (súper efectivo), x1 (neutral), x0.5 (no es muy efectivo)
+ * - Sólo hay 4 tipos de Pokémon: Agua, Fuego, Planta y Eléctrico 
+ *   (buscar su efectividad)
+ * - El programa recibe los siguientes parámetros:
+ *  - Tipo del Pokémon atacante.
+ *  - Tipo del Pokémon defensor.
+ *  - Ataque: Entre 1 y 100.
+ *  - Defensa: Entre 1 y 100."""
+
+
+
+print("ÉSTA ES UNA BATALLA POKEMÓN")
+print("TIPOS DE POKEMÓN: ")
+print("1 >>> AGUA")
+print("2 >>> FUEGO")
+print("3 >>> PLANTA")
+print("4 >>> ELECTRICO")
+
+
+
+effectivness = ("super_effective", "neutral", "not_that_effective")
+pokemon_type = ("AGUA", "FUEGO", "PLANTA", "ELECTRICO") 
+type_att_pokemon = int(print("Ingrese el número correspondiente (1-4) al tipo de pokemón que ATACA >>> "))
+type_def_pokemon = int(input("Ingrese el número correspondiente (1-4) al tipo de pokemón que DEFIENDE >>> "))
+att_pokemon = int(print("¿Cuál es el ataque del pokemón ofensor? >>> ")) 
+def_pokemon = int(print("¿Cuál es la defensa del pokemón defensor? >>> ")) 
+daño = 50 * (att_pokemon / def_pokemon) * effectivness
+
+
+
