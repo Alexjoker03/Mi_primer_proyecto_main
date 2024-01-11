@@ -19,7 +19,7 @@ def fun_listado(lista, orden):
                     lista[j], lista[j + 1] = lista[j + 1], lista[j]
 
     
-    if orden == "DESC":
+    elif orden == "DESC":
         for i in range(largo_lista):
             numero = int(input("Introduce un número >>>  "))
             lista.append(numero)
@@ -30,8 +30,8 @@ def fun_listado(lista, orden):
                 if lista[j] < lista[j + 1]:
                     lista[j], lista[j + 1] = lista[j + 1], lista[j]  
 
-    if orden != "DESC" or "ASC":
-        lista = [1, 3, 5, 7]  
+    elif orden != "DESC" or "ASC":
+        lista = ("No elegiste una opción valida")  
 
     return(lista)            
 
@@ -43,7 +43,7 @@ ord = input("Escribe ASC si quieres que se muestre tu lista de forma ascendente 
 orden = ord.upper()
 
 resultado = fun_listado(lista, orden)
-print(f"Tu lista es: {resultado} esta dude, lo logramos")
+print(f"Tu lista es: {resultado}")
 
 
       
