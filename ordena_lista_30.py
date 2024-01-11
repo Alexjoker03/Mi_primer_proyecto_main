@@ -43,7 +43,7 @@ ord = input("Escribe ASC si quieres que se muestre tu lista de forma ascendente 
 orden = ord.upper()
 
 resultado = fun_listado(lista, orden)
-print(f"Tu lista es: {resultado} esta dude")
+print(f"Tu lista es: {resultado} esta dude, lo logramos")
 
       
       
