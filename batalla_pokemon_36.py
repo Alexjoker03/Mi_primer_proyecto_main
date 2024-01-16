@@ -23,11 +23,15 @@ print("4 >>> ELECTRICO")
 
 effectivness = ("super_effective", "neutral", "not_that_effective")
 pokemon_type = ("AGUA", "FUEGO", "PLANTA", "ELECTRICO") 
-type_att_pokemon = int(print("Ingrese el número correspondiente (1-4) al tipo de pokemón que ATACA >>> "))
+type_att_pokemon = int(input("Ingrese el número correspondiente (1-4) al tipo de pokemón que ATACA >>> "))
 type_def_pokemon = int(input("Ingrese el número correspondiente (1-4) al tipo de pokemón que DEFIENDE >>> "))
-att_pokemon = int(print("¿Cuál es el ataque del pokemón ofensor? >>> ")) 
-def_pokemon = int(print("¿Cuál es la defensa del pokemón defensor? >>> ")) 
-daño = 50 * (att_pokemon / def_pokemon) * effectivness
+att_pokemon = int(input("¿Cuál es el ataque del pokemón ofensor? >>> ")) 
+if att_pokemon > 100 or att_pokemon < 1:
+    print("El ataque debe de tener un valor entre 1 y 100")
+def_pokemon = int(input("¿Cuál es la defensa del pokemón defensor? >>> ")) 
+
+
+print(effectivness[0],",", pokemon_type[3])
 
 
 
