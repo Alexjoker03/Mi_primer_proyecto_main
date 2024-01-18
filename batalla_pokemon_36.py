@@ -14,10 +14,8 @@
 
 print("ÉSTA ES UNA BATALLA POKEMÓN")
 print("TIPOS DE POKEMÓN: ")
-print("1 >>> AGUA")
-print("2 >>> FUEGO")
-print("3 >>> PLANTA")
-print("4 >>> ELECTRICO")
+print("1 >>> AGUA \n2 FUEGO \n3 PLANTA \n4 ELECTRICO")
+
 
 
 
